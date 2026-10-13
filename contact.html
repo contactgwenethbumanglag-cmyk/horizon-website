@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Horizon Mortgage Brokers</title>
+  <meta name="description" content="Book a free call or send a message to Horizon Mortgage Brokers. We'll reply within one business day.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+</head>
+
+<body class="font-body text-ink bg-white antialiased">
+
+  <!-- NAVBAR (comes from components.js) -->
+  <div id="site-header" class="sticky top-0 z-50"></div>
+
+  <main>
+
+    <!-- 1. HERO (short, text only) -->
+    <section class="bg-deep py-16 md:py-20 text-center">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <h1 class="font-heading text-4xl md:text-[40px] leading-tight text-white mb-4">Let's talk about your home loan.</h1>
+        <p class="text-lg leading-relaxed text-cloud max-w-[640px] mx-auto">Book a free call or send a message. We'll reply within one business day.</p>
+      </div>
+    </section>
+
+    <!-- 2. FORM + CONTACT DETAILS -->
+    <section class="bg-white py-20">
+      <div class="max-w-[1000px] mx-auto px-6">
+        <div class="grid md:grid-cols-[1.2fr_1fr] rounded-2xl overflow-hidden border border-fog">
+
+          <!-- form -->
+          <div class="bg-white border-t-[3px] border-t-sage p-8">
+            <h2 class="font-heading text-2xl text-horizon mb-6">Send us a message</h2>
+
+            <div id="form-success" class="hidden mb-6 rounded-lg border border-[#2E8B57] bg-[#2E8B57]/10 px-4 py-3 text-sm text-ink" role="status">
+              Thanks! We've got your message and will reply within one business day.
+            </div>
+
+            <!-- To receive real emails later, remove the script at the bottom and set:
+                 <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"> -->
+            <form id="contact-form" class="space-y-5">
+              <div>
+                <label for="name" class="block text-sm font-medium text-horizon mb-1.5">Full name</label>
+                <input id="name" name="name" type="text" required autocomplete="name" placeholder="Enter your full name..."
+                       class="w-full h-12 px-4 rounded-lg border border-fog bg-white text-ink placeholder:text-slate/60 focus:outline-none focus:border-horizon focus:ring-1 focus:ring-horizon">
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-horizon mb-1.5">Email address</label>
+                <input id="email" name="email" type="email" required autocomplete="email" placeholder="Enter your email address..."
+                       class="w-full h-12 px-4 rounded-lg border border-fog bg-white text-ink placeholder:text-slate/60 focus:outline-none focus:border-horizon focus:ring-1 focus:ring-horizon">
+              </div>
+
+              <div>
+                <label for="phone" class="block text-sm font-medium text-horizon mb-1.5">Phone number</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Enter your phone number..."
+                       class="w-full h-12 px-4 rounded-lg border border-fog bg-white text-ink placeholder:text-slate/60 focus:outline-none focus:border-horizon focus:ring-1 focus:ring-horizon">
+              </div>
+
+              <div>
+                <label for="interest" class="block text-sm font-medium text-horizon mb-1.5">I'm interested in</label>
+                <div class="relative">
+                  <select id="interest" name="interest" required
+                          class="w-full h-12 pl-4 pr-10 rounded-lg border border-fog bg-white text-ink appearance-none focus:outline-none focus:border-horizon focus:ring-1 focus:ring-horizon invalid:text-slate/60">
+                    <option value="" disabled selected>Select an option...</option>
+                    <option>First home loan</option>
+                    <option>Refinancing</option>
+                    <option>Investment loan</option>
+                    <option>Something else</option>
+                  </select>
+                  <i data-lucide="chevron-down" class="w-5 h-5 text-slate absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                </div>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-horizon mb-1.5">Message</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Tell us a little about what you're looking for..."
+                          class="w-full px-4 py-3 rounded-lg border border-fog bg-white text-ink placeholder:text-slate/60 focus:outline-none focus:border-horizon focus:ring-1 focus:ring-horizon resize-y"></textarea>
+              </div>
+
+              <div class="pt-2 text-center">
+                <button type="submit" class="inline-flex w-full items-center justify-center h-11 px-6 rounded-[10px] bg-amber text-deep font-medium hover:bg-[#D4912A] transition">Send enquiry</button>
+                <p class="text-xs text-slate mt-3">We'll never share your details.</p>
+              </div>
+            </form>
+          </div>
+
+          <!-- contact details -->
+          <div class="bg-cloud p-8">
+            <h2 class="font-heading text-2xl text-horizon mb-6">Contact details</h2>
+
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center gap-4">
+                <span class="shrink-0 w-12 h-12 rounded-lg bg-mist text-forest flex items-center justify-center"><i data-lucide="phone" class="w-5 h-5"></i></span>
+                <a href="tel:1300000000" class="font-medium hover:underline">1300 000 000</a>
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="shrink-0 w-12 h-12 rounded-lg bg-mist text-forest flex items-center justify-center"><i data-lucide="mail" class="w-5 h-5"></i></span>
+                <a href="mailto:hello@horizonmortgagebrokers.com.au" class="font-medium hover:underline break-all">hello@horizonmortgagebrokers.com.au</a>
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="shrink-0 w-12 h-12 rounded-lg bg-mist text-forest flex items-center justify-center"><i data-lucide="map-pin" class="w-5 h-5"></i></span>
+                <span class="font-medium">Level 5, 100 Example Street, Sydney NSW 2000</span>
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="shrink-0 w-12 h-12 rounded-lg bg-mist text-forest flex items-center justify-center"><i data-lucide="clock" class="w-5 h-5"></i></span>
+                <span class="font-medium">Mon-Fri, 9am-5pm</span>
+              </li>
+            </ul>
+
+            <iframe title="Map of Sydney NSW 2000"
+                    src="https://maps.google.com/maps?q=Sydney%20NSW%202000&z=14&output=embed"
+                    class="w-full h-[240px] rounded-xl border border-fog"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="text-sm text-slate mt-3">Level 5, 100 Example Street, Sydney</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. WHAT HAPPENS NEXT -->
+    <section class="bg-cloud py-20">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <h2 class="font-heading text-3xl text-horizon text-center mb-10">What happens next</h2>
+
+        <div class="grid md:grid-cols-3">
+
+          <div>
+            <span class="inline-block px-4 py-1.5 text-sm font-medium bg-horizon text-white border border-horizon">Step 1</span>
+            <div class="bg-white border border-fog p-6">
+              <h3 class="font-heading text-xl text-horizon mb-2">We reply</h3>
+              <p class="text-[15px] leading-relaxed mb-6">You'll hear from us within one business day.</p>
+              <img src="images/contact-step-1.jpg" alt="A woman on the phone with her laptop open" class="w-full aspect-[4/3] object-cover rounded-lg">
+            </div>
+          </div>
+
+          <div>
+            <span class="inline-block px-4 py-1.5 text-sm font-medium text-horizon border border-fog bg-white">Step 2</span>
+            <div class="bg-white border border-fog md:border-l-0 p-6">
+              <h3 class="font-heading text-xl text-horizon mb-2">Free chat</h3>
+              <p class="text-[15px] leading-relaxed mb-6">We talk through your goals and answer your questions.</p>
+              <img src="images/contact-step-2.jpg" alt="A man chatting with a broker on his laptop" class="w-full aspect-[4/3] object-cover rounded-lg">
+            </div>
+          </div>
+
+          <div>
+            <span class="inline-block px-4 py-1.5 text-sm font-medium text-horizon border border-fog bg-white">Step 3</span>
+            <div class="bg-white border border-fog md:border-l-0 p-6">
+              <h3 class="font-heading text-xl text-horizon mb-2">Tailored options</h3>
+              <p class="text-[15px] leading-relaxed mb-6">We compare lenders and recommend what fits you.</p>
+              <img src="images/contact-step-3.jpg" alt="Two women talking through loan options" class="w-full aspect-[4/3] object-cover rounded-lg">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. QUICK FAQ -->
+    <section class="bg-white py-20">
+      <div class="max-w-[760px] mx-auto px-6">
+        <h2 class="font-heading text-3xl text-horizon text-center mb-10">Quick questions</h2>
+
+        <div class="space-y-3">
+
+          <details class="group bg-white border border-fog rounded-xl px-6 py-5 shadow-sm" open>
+            <summary class="flex items-center justify-between gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <span class="font-medium text-horizon">Is there a cost?</span>
+              <span class="text-xl text-forest leading-none shrink-0" aria-hidden="true"><span class="group-open:hidden">+</span><span class="hidden group-open:inline">&minus;</span></span>
+            </summary>
+            <p class="text-[15px] leading-relaxed text-ink mt-3">In most cases, no. Lenders pay us when your loan settles, and we'll always tell you upfront about any fees.</p>
+          </details>
+
+          <details class="group bg-white border border-fog rounded-xl px-6 py-5 shadow-sm">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <span class="font-medium text-horizon">Do you work with my bank?</span>
+              <span class="text-xl text-forest leading-none shrink-0" aria-hidden="true"><span class="group-open:hidden">+</span><span class="hidden group-open:inline">&minus;</span></span>
+            </summary>
+            <p class="text-[15px] leading-relaxed text-ink mt-3">We work with a wide panel of lenders, including major banks, and we can compare your current lender too.</p>
+          </details>
+
+          <details class="group bg-white border border-fog rounded-xl px-6 py-5 shadow-sm">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <span class="font-medium text-horizon">How long does pre-approval take?</span>
+              <span class="text-xl text-forest leading-none shrink-0" aria-hidden="true"><span class="group-open:hidden">+</span><span class="hidden group-open:inline">&minus;</span></span>
+            </summary>
+            <p class="text-[15px] leading-relaxed text-ink mt-3">Often within a few business days once we have your documents, though it varies by lender.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (comes from components.js) -->
+  <div id="site-footer"></div>
+
+  <!-- Scripts: icons first, then shared nav/footer, then this page's form -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="components.js"></script>
+  <script>
+    // Mockup form: shows a thank-you message instead of sending an email.
+    const form = document.getElementById('contact-form');
+    const success = document.getElementById('form-success');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      form.reset();
+      success.classList.remove('hidden');
+      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  </script>
+</body>
+</html>

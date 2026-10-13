@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Home Buyers | Horizon Mortgage Brokers</title>
+  <meta name="description" content="Buying your first home? Horizon Mortgage Brokers guides you from saving your deposit to collecting the keys.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+</head>
+
+<body class="font-body text-ink bg-white antialiased">
+
+  <!-- NAVBAR (comes from components.js) -->
+  <div id="site-header" class="sticky top-0 z-50"></div>
+
+  <main>
+
+    <!-- 1. HERO -->
+    <section class="relative bg-deep overflow-hidden">
+      <img src="images/fhb-hero.jpg" alt="A happy family moving into their first home"
+           class="absolute inset-y-0 right-0 h-full w-full md:w-[60%] object-cover">
+      <div class="absolute inset-0 bg-deep/85 md:bg-transparent md:bg-gradient-to-r md:from-deep md:from-40% md:to-transparent"></div>
+
+      <div class="relative max-w-[1200px] mx-auto px-6 py-20 md:py-28">
+        <div class="max-w-[600px]">
+          <span class="inline-flex items-center rounded-full bg-sage text-deep text-[13px] font-medium px-3.5 py-1.5 mb-4">Updated for the 5% Deposit Scheme</span>
+          <h1 class="font-heading text-4xl md:text-5xl leading-tight text-white mb-4">Buying your first home?<br class="hidden md:block"> Let's make it simple.</h1>
+          <p class="text-lg leading-relaxed text-cloud max-w-[480px] mb-8">From saving your deposit to collecting the keys, we'll guide you through every step.</p>
+          <a href="#calculator" class="inline-flex items-center justify-center h-11 px-6 rounded-[10px] bg-amber text-deep font-medium hover:bg-[#D4912A] transition">Check what you could borrow</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. GOVERNMENT SUPPORT -->
+    <section class="bg-white py-20">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <h2 class="font-heading text-3xl text-horizon text-center mb-10">Help that could get you in sooner</h2>
+
+        <div class="grid gap-6 md:grid-cols-3 max-w-[1000px] mx-auto">
+
+          <article class="bg-white border border-fog rounded-xl p-6">
+            <div class="w-12 h-12 rounded-full bg-mist text-forest flex items-center justify-center mb-4">
+              <i data-lucide="piggy-bank" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-heading text-xl text-horizon mb-2">5% deposit scheme</h3>
+            <p class="text-[15px] leading-relaxed text-ink">Eligible first home buyers may be able to buy with as little as a 5% deposit.</p>
+          </article>
+
+          <article class="bg-white border border-fog rounded-xl p-6">
+            <div class="w-12 h-12 rounded-full bg-mist text-forest flex items-center justify-center mb-4">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-heading text-xl text-horizon mb-2">No LMI for eligible buyers</h3>
+            <p class="text-[15px] leading-relaxed text-ink">The scheme can help you avoid Lenders Mortgage Insurance, which could save you thousands.</p>
+          </article>
+
+          <article class="bg-white border border-fog rounded-xl p-6">
+            <div class="w-12 h-12 rounded-full bg-mist text-forest flex items-center justify-center mb-4">
+              <i data-lucide="landmark" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-heading text-xl text-horizon mb-2">State grants and concessions</h3>
+            <p class="text-[15px] leading-relaxed text-ink">Depending on where you buy, you may get help with stamp duty or a grant.</p>
+          </article>
+
+        </div>
+
+        <p class="text-center text-[13px] text-slate mt-8">Eligibility and price caps apply. We'll check for you.</p>
+      </div>
+    </section>
+
+    <!-- 3. YOUR JOURNEY -->
+    <section class="bg-cloud py-20">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <h2 class="font-heading text-3xl text-horizon text-center mb-14">Your path to home ownership</h2>
+
+        <ol class="relative grid gap-10 md:grid-cols-5 md:gap-6">
+          <!-- connector lines: horizontal on desktop, vertical on mobile -->
+          <div class="hidden md:block absolute top-6 left-[10%] right-[10%] h-0.5 bg-fog" aria-hidden="true"></div>
+          <div class="md:hidden absolute left-6 top-6 bottom-6 w-0.5 -ml-px bg-fog" aria-hidden="true"></div>
+
+          <li class="relative flex gap-5 md:flex-col md:items-center md:text-center">
+            <span class="shrink-0 w-12 h-12 rounded-full bg-forest text-white font-heading text-lg flex items-center justify-center ring-8 ring-cloud">1</span>
+            <div>
+              <h3 class="font-medium text-horizon mb-1">Set your budget</h3>
+              <p class="text-sm leading-relaxed text-ink md:max-w-[180px]">Work out what you can comfortably afford.</p>
+            </div>
+          </li>
+
+          <li class="relative flex gap-5 md:flex-col md:items-center md:text-center">
+            <span class="shrink-0 w-12 h-12 rounded-full bg-forest text-white font-heading text-lg flex items-center justify-center ring-8 ring-cloud">2</span>
+            <div>
+              <h3 class="font-medium text-horizon mb-1">Get pre-approved</h3>
+              <p class="text-sm leading-relaxed text-ink md:max-w-[180px]">Know your borrowing limit before you start looking.</p>
+            </div>
+          </li>
+
+          <li class="relative flex gap-5 md:flex-col md:items-center md:text-center">
+            <span class="shrink-0 w-12 h-12 rounded-full bg-forest text-white font-heading text-lg flex items-center justify-center ring-8 ring-cloud">3</span>
+            <div>
+              <h3 class="font-medium text-horizon mb-1">Find your home</h3>
+              <p class="text-sm leading-relaxed text-ink md:max-w-[180px]">Shop with confidence, knowing your budget.</p>
+            </div>
+          </li>
+
+          <li class="relative flex gap-5 md:flex-col md:items-center md:text-center">
+            <span class="shrink-0 w-12 h-12 rounded-full bg-forest text-white font-heading text-lg flex items-center justify-center ring-8 ring-cloud">4</span>
+            <div>
+              <h3 class="font-medium text-horizon mb-1">Make an offer</h3>
+              <p class="text-sm leading-relaxed text-ink md:max-w-[180px]">We're here for advice when you need it.</p>
+            </div>
+          </li>
+
+          <li class="relative flex gap-5 md:flex-col md:items-center md:text-center">
+            <span class="shrink-0 w-12 h-12 rounded-full bg-forest text-white font-heading text-lg flex items-center justify-center ring-8 ring-cloud">5</span>
+            <div>
+              <h3 class="font-medium text-horizon mb-1">Settlement</h3>
+              <p class="text-sm leading-relaxed text-ink md:max-w-[180px]">We manage the loan paperwork through to the keys.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. BORROWING POWER CALCULATOR -->
+    <section id="calculator" class="bg-mist py-20 scroll-mt-20">
+      <div class="max-w-[880px] mx-auto px-6">
+        <h2 class="font-heading text-3xl text-horizon text-center mb-10">See what you could borrow</h2>
+
+        <div class="grid md:grid-cols-2 rounded-2xl overflow-hidden shadow-sm">
+
+          <!-- inputs -->
+          <form class="bg-white p-8 space-y-5" onsubmit="return false" aria-label="Borrowing power estimate">
+            <div>
+              <label for="income" class="block text-sm font-medium text-horizon mb-1.5">Annual income</label>
+              <input id="income" type="number" inputmode="numeric" min="0" step="1000" placeholder="Enter your annual income..."
+                     class="w-full h-12 px-4 rounded-lg border border-fog bg-white text-ink placeholder:text-slate/60 focus:outline-none focus:border-horizon focus:ring-1 focus:ring-horizon">
+            </div>
+            <div>
+              <label for="expenses" class="block text-sm font-medium text-horizon mb-1.5">Monthly expenses</label>
+              <input id="expenses" type="number" inputmode="numeric" min="0" step="100" placeholder="Enter your monthly expenses..."
+                     class="w-full h-12 px-4 rounded-lg border border-fog bg-white text-ink placeholder:text-slate/60 focus:outline-none focus:border-horizon focus:ring-1 focus:ring-horizon">
+            </div>
+            <div>
+              <label for="deposit" class="block text-sm font-medium text-horizon mb-1.5">Deposit saved</label>
+              <input id="deposit" type="number" inputmode="numeric" min="0" step="1000" placeholder="Enter your deposit saved..."
+                     class="w-full h-12 px-4 rounded-lg border border-fog bg-white text-ink placeholder:text-slate/60 focus:outline-none focus:border-horizon focus:ring-1 focus:ring-horizon">
+            </div>
+          </form>
+
+          <!-- result panel -->
+          <div class="bg-horizon p-8 flex flex-col justify-center">
+            <p class="text-sm font-medium text-cloud mb-3">Estimated borrowing power</p>
+            <p id="borrow-out" class="font-heading text-4xl md:text-[40px] leading-tight text-white mb-5">$520,000</p>
+            <p id="budget-out" class="text-sm text-fog mb-8">Your estimated property budget: $570,000</p>
+            <a href="contact.html" class="inline-flex w-full items-center justify-center h-11 px-6 rounded-[10px] bg-amber text-deep font-medium hover:bg-[#D4912A] transition">Talk to a broker</a>
+          </div>
+        </div>
+
+        <p class="text-center text-xs text-ink mt-6">Estimates only. Speak to a broker about your situation.</p>
+      </div>
+    </section>
+
+    <!-- 5. WHAT YOU'LL NEED + COSTS -->
+    <section class="bg-white py-20">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <h2 class="font-heading text-3xl text-horizon text-center mb-10">Get ready: what you'll need and what it costs</h2>
+
+        <div class="grid gap-6 md:grid-cols-2 max-w-[880px] mx-auto">
+
+          <div class="bg-cloud border border-fog rounded-xl p-8">
+            <h3 class="font-heading text-xl text-horizon text-center mb-6">Documents to gather</h3>
+            <ul class="space-y-3.5">
+              <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-forest shrink-0"></i><span>Photo ID</span></li>
+              <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-forest shrink-0"></i><span>Recent payslips</span></li>
+              <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-forest shrink-0"></i><span>Bank statements</span></li>
+              <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-forest shrink-0"></i><span>Savings history</span></li>
+              <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-forest shrink-0"></i><span>A list of any debts</span></li>
+            </ul>
+          </div>
+
+          <div class="bg-cloud border border-fog rounded-xl p-8">
+            <h3 class="font-heading text-xl text-horizon text-center mb-6">Costs to plan for</h3>
+            <ul class="space-y-3.5">
+              <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-forest shrink-0"></i><span>Deposit</span></li>
+              <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-forest shrink-0"></i><span>Stamp duty</span></li>
+              <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-forest shrink-0"></i><span>Conveyancing</span></li>
+              <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-forest shrink-0"></i><span>Building and pest inspections</span></li>
+              <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-forest shrink-0"></i><span>Moving costs</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. FAQ -->
+    <section class="bg-cloud py-20">
+      <div class="max-w-[760px] mx-auto px-6">
+        <h2 class="font-heading text-3xl text-horizon text-center mb-10">First home buyer questions</h2>
+
+        <div class="space-y-3">
+
+          <details class="group bg-white border border-fog rounded-xl px-6 py-5" open>
+            <summary class="flex items-center justify-between gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <span class="font-medium text-horizon">How much deposit do I need?</span>
+              <span class="text-xl text-forest leading-none shrink-0" aria-hidden="true"><span class="group-open:hidden">+</span><span class="hidden group-open:inline">&minus;</span></span>
+            </summary>
+            <p class="text-[15px] leading-relaxed text-ink mt-3">Many lenders prefer 20%, but eligible first home buyers may buy with as little as 5% under the government scheme. We'll help you work out what suits you.</p>
+          </details>
+
+          <details class="group bg-white border border-fog rounded-xl px-6 py-5">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <span class="font-medium text-horizon">What is LMI?</span>
+              <span class="text-xl text-forest leading-none shrink-0" aria-hidden="true"><span class="group-open:hidden">+</span><span class="hidden group-open:inline">&minus;</span></span>
+            </summary>
+            <p class="text-[15px] leading-relaxed text-ink mt-3">Lenders Mortgage Insurance protects the lender if a loan isn't repaid. It's usually charged when your deposit is under 20%, though eligible buyers under the scheme may avoid it.</p>
+          </details>
+
+          <details class="group bg-white border border-fog rounded-xl px-6 py-5">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <span class="font-medium text-horizon">What is pre-approval?</span>
+              <span class="text-xl text-forest leading-none shrink-0" aria-hidden="true"><span class="group-open:hidden">+</span><span class="hidden group-open:inline">&minus;</span></span>
+            </summary>
+            <p class="text-[15px] leading-relaxed text-ink mt-3">It's a lender's conditional OK on how much you could borrow. It isn't a guarantee, but it helps you shop with confidence.</p>
+          </details>
+
+          <details class="group bg-white border border-fog rounded-xl px-6 py-5">
+            <summary class="flex items-center justify-between gap-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+              <span class="font-medium text-horizon">Can I use a grant?</span>
+              <span class="text-xl text-forest leading-none shrink-0" aria-hidden="true"><span class="group-open:hidden">+</span><span class="hidden group-open:inline">&minus;</span></span>
+            </summary>
+            <p class="text-[15px] leading-relaxed text-ink mt-3">It depends on your state, the property and whether it's new. We'll check which grants and concessions apply to you.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CTA BAND -->
+    <section class="bg-horizon py-20 text-center">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <h2 class="font-heading text-3xl text-white mb-3">Find out what you could borrow.</h2>
+        <p class="text-cloud leading-relaxed max-w-[560px] mx-auto mb-8">Chat with one of our brokers about your deposit, budget and government support. Free, with no obligation and no jargon.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="contact.html" class="inline-flex items-center justify-center h-11 px-6 rounded-[10px] bg-amber text-deep font-medium hover:bg-[#D4912A] transition">Book a free call</a>
+          <a href="tel:1300000000" class="inline-flex items-center justify-center h-11 px-6 rounded-[10px] border-2 border-white text-white font-medium hover:bg-white hover:text-deep transition">Call 1300 000 000</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (comes from components.js) -->
+  <div id="site-footer"></div>
+
+  <!-- Scripts: icons first, then shared nav/footer, then this page's calculator -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="components.js"></script>
+  <script>
+    // Borrowing power estimate. This is a simple rough placeholder for the mockup,
+    // not a real lender calculation. It shows sample figures until someone types an income.
+    const income = document.getElementById('income');
+    const expenses = document.getElementById('expenses');
+    const deposit = document.getElementById('deposit');
+    const borrowOut = document.getElementById('borrow-out');
+    const budgetOut = document.getElementById('budget-out');
+    const money = (n) => '$' + Math.round(n).toLocaleString('en-AU');
+
+    function updateEstimate() {
+      const annualIncome = Number(income.value);
+      if (!annualIncome) {
+        borrowOut.textContent = '$520,000';
+        budgetOut.textContent = 'Your estimated property budget: $570,000';
+        return;
+      }
+      const monthlyIncome = annualIncome / 12;
+      const surplus = Math.max(0, monthlyIncome - Number(expenses.value));
+      const maxRepayment = Math.min(surplus, monthlyIncome * 0.35); // cap at 35% of income
+      const monthlyRate = 0.09 / 12;  // assumes a cautious 9% assessment rate
+      const months = 30 * 12;         // 30-year loan
+      const borrow = maxRepayment * (1 - Math.pow(1 + monthlyRate, -months)) / monthlyRate;
+      const rounded = Math.round(borrow / 1000) * 1000;
+
+      borrowOut.textContent = money(rounded);
+      budgetOut.textContent = 'Your estimated property budget: ' + money(rounded + Number(deposit.value));
+    }
+
+    [income, expenses, deposit].forEach((el) => el.addEventListener('input', updateEstimate));
+  </script>
+</body>
+</html>
